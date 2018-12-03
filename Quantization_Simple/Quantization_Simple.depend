@@ -13,3 +13,17 @@
 	<stdlib.h>
 	"ppm_reader.h"
 
+1543881410 source:d:\workspace\home\projetprognecessaire\quantization_simple\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+
+1543881410 d:\workspace\home\projetprognecessaire\quantization_simple\ppm_reader.h
+	<stdio.h>
+	<stdlib.h>
+
+1543881410 source:d:\workspace\home\projetprognecessaire\quantization_simple\ppm_reader.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+
