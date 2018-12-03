@@ -23,4 +23,4 @@ Le programme lira le header de cette façon:
 	-Le troisième entier lu (Chaîne délimitée et ne contenenant que des chiffres) représente le nombre maximal d'un canal de couleur (255) et sera ignoré.
 	-Tout octet suivant directement un délimiteur après que le troisième entier à lire ai été passé, représentera le canal rouge du premier pixel. On se trouve donc à l'adresse du premier pixel.
 	
---> Le but d'avoir l'addresse du premier pixel sert à obtenir la position directe d'un pixel dans le Buffer avec la fonction "".
+--> Le but d'avoir l'addresse du premier pixel sert à obtenir la position directe d'un pixel dans le Buffer avec la fonction "fonction".
