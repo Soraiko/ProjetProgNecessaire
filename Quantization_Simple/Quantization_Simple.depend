@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1543869104 source:d:\workspace\home\projetprogavancee\quantization_simple\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+
+1543869532 d:\workspace\home\projetprogavancee\quantization_simple\ppm_reader.h
+	<stdio.h>
+	<stdlib.h>
+
+1543869098 source:d:\workspace\home\projetprogavancee\quantization_simple\ppm_reader.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+
