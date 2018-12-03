@@ -5,6 +5,7 @@ typedef struct reader {
 	int Width;
 	int Height;
 	int PixelStartAddress;
+	int BufferSize;
 	unsigned char * Buffer;
 } PpmReader;
 

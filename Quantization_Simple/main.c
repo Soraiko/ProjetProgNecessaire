@@ -11,8 +11,9 @@ int main(int argc, char *argv[])
 {
     PpmReader* p = OpenPPM("photo_binaire.ppm");
 
-	printf("%d", p->Buffer[0]);
+    GetPPMHeaderData(p);
 
+	printf("%x", p->PixelStartAddress);
 	MettrePause();
 	return EXIT_SUCCESS;
 }
