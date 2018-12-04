@@ -10,9 +10,9 @@ void MettrePause()
 int main(int argc, char *argv[])
 {
     PpmReader* p = OpenPPM("photo_binaire.ppm");
-
     GetPPMHeaderData(p);
-    Couleur c = GetPixel(p, 228, 138);
+
+    PpmCouleur c = GetPixel(p, 555, 370);
 
 	printf("%d %d %d ", c.Rouge, c.Vert, c.Bleu);
 	MettrePause();

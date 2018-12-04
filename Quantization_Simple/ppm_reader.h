@@ -13,9 +13,9 @@ typedef struct couleur {
 	unsigned char Rouge;
 	unsigned char Vert;
 	unsigned char Bleu;
-} Couleur;
+} PpmCouleur;
 
 PpmReader* OpenPPM(char *fname);
 void GetPPMHeaderData(PpmReader* p);
 
-Couleur GetPixel(PpmReader* ppm, int x, int y);
+PpmCouleur GetPixel(PpmReader* ppm, int x, int y);

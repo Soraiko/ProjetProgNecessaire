@@ -25,9 +25,9 @@ PpmReader* OpenPPM(char *fname)
 	return newPPM;
 }
 
-Couleur GetPixel(PpmReader* ppm, int x, int y)
+PpmCouleur GetPixel(PpmReader* ppm, int x, int y)
 {
-    Couleur c;
+    PpmCouleur c;
     int position_pixel = ppm->PixelStartAddress + (ppm->Width * y * 3) + (x * 3); /* x3 car 3 couleurs par pixel */
 
     c.Rouge = ppm->Buffer[position_pixel];
