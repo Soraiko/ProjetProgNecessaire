@@ -3,7 +3,6 @@
 #include "ppm_reader.h"
 
 
-
 PpmReader* OpenPPM(char *fname)
 {
     /* Cette méthode sert à copier les octets du fichier d'emplacement fname dans le Buffer de la structure PpmReader */
@@ -24,6 +23,17 @@ PpmReader* OpenPPM(char *fname)
 
 	fclose(f); /* On ferme le fichier pour libérer le handle. */
 	return newPPM;
+}
+
+Couleur GetPixel(PpmReader* ppm, int x, int y)
+{
+    Couleur c;
+    int position_pixel = ppm->PixelStartAddress + (ppm->Width * y * 3) + (x * 3); /* x3 car 3 couleurs par pixel */
+
+    c.Rouge = ppm->Buffer[position_pixel];
+    c.Vert = ppm->Buffer[position_pixel+1];
+    c.Bleu = ppm->Buffer[position_pixel+2];
+    return c;
 }
 
 void GetPPMHeaderData(PpmReader* ppm)
