@@ -1,3 +1,6 @@
+#ifndef PPM_READER_H
+#define PPM_READER_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -19,3 +22,6 @@ PpmReader* OpenPPM(char *fname);
 void GetPPMHeaderData(PpmReader* p);
 
 PpmCouleur GetPixel(PpmReader* ppm, int x, int y);
+PpmCouleur ConsCouleur(unsigned char r,unsigned char g, unsigned char b);
+
+#endif

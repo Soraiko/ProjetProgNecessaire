@@ -27,3 +27,30 @@
 	<stdlib.h>
 	"ppm_reader.h"
 
+1544006421 source:c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\ppm_reader.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+
+1544006479 c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\ppm_reader.h
+	<stdio.h>
+	<stdlib.h>
+
+1544007478 source:c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+	"ppm_quanti.h"
+
+1544007362 source:c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\ppm_quanti.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_quanti.h"
+	<stdbool.h>
+
+1544007490 c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\ppm_quanti.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"ppm_reader.h"
+

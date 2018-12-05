@@ -1,3 +1,6 @@
+#ifndef PPM_READER_C
+#define PPM_READER_C
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "ppm_reader.h"
@@ -33,6 +36,15 @@ PpmCouleur GetPixel(PpmReader* ppm, int x, int y)
     c.Rouge = ppm->Buffer[position_pixel];
     c.Vert = ppm->Buffer[position_pixel+1];
     c.Bleu = ppm->Buffer[position_pixel+2];
+    return c;
+}
+
+PpmCouleur ConsCouleur(unsigned char r,unsigned char g, unsigned char b)
+{
+    PpmCouleur c;
+    c.Rouge = r;
+    c.Vert = g;
+    c.Bleu = b;
     return c;
 }
 
@@ -88,3 +100,5 @@ void GetPPMHeaderData(PpmReader* ppm)
         positionLecture++;
     }
 }
+
+#endif
