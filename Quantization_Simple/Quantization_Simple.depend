@@ -50,3 +50,10 @@
 	<stdlib.h>
 	"ppm_reader.h"
 
+1544115277 source:d:\workspace\home\projetprognecessaire\quantization_simple\src\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+	"ppm_quanti.h"
+	<time.h>
+
