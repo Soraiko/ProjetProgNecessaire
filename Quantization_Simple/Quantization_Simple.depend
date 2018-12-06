@@ -1,28 +1,51 @@
 # depslib dependency file v1.0
-1544057278 source:d:\workspace\home\projetprognecessaire\quantization_simple\main.c
+1544114246 source:d:\workspace\home\projetprognecessaire\quantization_simple\main.c
 	<stdio.h>
 	<stdlib.h>
 	"ppm_reader.h"
 	"ppm_quanti.h"
+	<time.h>
 
 1544056857 d:\workspace\home\projetprognecessaire\quantization_simple\ppm_reader.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 
-1544029669 d:\workspace\home\projetprognecessaire\quantization_simple\ppm_quanti.h
+1544112668 d:\workspace\home\projetprognecessaire\quantization_simple\ppm_quanti.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 	"ppm_reader.h"
 
-1544045187 source:d:\workspace\home\projetprognecessaire\quantization_simple\ppm_quanti.c
+1544112665 source:d:\workspace\home\projetprognecessaire\quantization_simple\ppm_quanti.c
 	<stdio.h>
 	<stdlib.h>
 	"ppm_quanti.h"
 	<stdbool.h>
 
-1544057140 source:d:\workspace\home\projetprognecessaire\quantization_simple\ppm_reader.c
+1544112172 source:d:\workspace\home\projetprognecessaire\quantization_simple\ppm_reader.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+
+1544112665 source:d:\workspace\home\projetprognecessaire\quantization_simple\src\ppm_quanti.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_quanti.h"
+	<stdbool.h>
+
+1544112668 d:\workspace\home\projetprognecessaire\quantization_simple\src\ppm_quanti.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"ppm_reader.h"
+
+1544056857 d:\workspace\home\projetprognecessaire\quantization_simple\src\ppm_reader.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1544112172 source:d:\workspace\home\projetprognecessaire\quantization_simple\src\ppm_reader.c
 	<stdio.h>
 	<stdlib.h>
 	"ppm_reader.h"
