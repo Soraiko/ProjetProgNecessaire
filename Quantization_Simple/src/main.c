@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "ppm_reader.h"
 #include "ppm_quanti.h"
-#include <time.h>
 
 void MettrePause()
 {
@@ -34,9 +33,6 @@ int main(int argc, char *argv[])
     PpmPalette* palette = ConsPalette(r->Width * r->Height); /*PpmPaletteChainee* palette = ConsPcVide();*/
     PpmCouleur c;
 
-    int msec = 0;
-    clock_t before = clock();
-
     printf("Recuperation de la liste des couleurs. (Version palette tableau)\n\n");
     /*printf("Recuperation de la liste des couleurs. (Version palette liste chainee)\n");*/
 
@@ -50,9 +46,7 @@ int main(int argc, char *argv[])
         AjouterCouleur(palette, c); /*palette = ConsPc(palette, c);*/
     }
 
-    clock_t difference = clock() - before;
-    msec = difference * 1000 / CLOCKS_PER_SEC;
-    printf("Palette de %d couleurs construite en %ds et %dms.\n\n",palette->Count, msec/1000, msec%1000);
+    printf("Palette de %d couleurs construite.\n\n",palette->Count);
 
 	MettrePause();
 	return EXIT_SUCCESS;
