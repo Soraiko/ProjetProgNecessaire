@@ -11,12 +11,14 @@ typedef struct palette {
 	PpmCouleur Couleur;
 	int Count;
 	struct palette *CouleurSuivante;
+	struct palette *PremierElement;
 } PpmPalette;
 
 PpmPalette* ConsPaletteVide();
-bool PaletteEstVide(PpmPalette* p);
-
 PpmPalette* ConsPalette(PpmPalette* old_p, PpmCouleur c);
+bool PaletteEstVide(PpmPalette* p);
+bool Contains(PpmPalette* p, PpmCouleur c);
+
 
 
 

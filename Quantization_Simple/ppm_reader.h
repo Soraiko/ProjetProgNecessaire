@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct reader {
 	int Width;
@@ -23,5 +24,6 @@ void GetPPMHeaderData(PpmReader* p);
 
 PpmCouleur GetPixel(PpmReader* ppm, int x, int y);
 PpmCouleur ConsCouleur(unsigned char r,unsigned char g, unsigned char b);
+bool Equals(PpmCouleur a, PpmCouleur b);
 
 #endif

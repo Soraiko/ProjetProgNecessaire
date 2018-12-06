@@ -32,7 +32,6 @@ PpmCouleur GetPixel(PpmReader* ppm, int x, int y)
 {
     PpmCouleur c;
     int position_pixel = ppm->PixelStartAddress + (ppm->Width * y * 3) + (x * 3); /* x3 car 3 couleurs par pixel */
-
     c.Rouge = ppm->Buffer[position_pixel];
     c.Vert = ppm->Buffer[position_pixel+1];
     c.Bleu = ppm->Buffer[position_pixel+2];
@@ -46,6 +45,11 @@ PpmCouleur ConsCouleur(unsigned char r,unsigned char g, unsigned char b)
     c.Vert = g;
     c.Bleu = b;
     return c;
+}
+
+bool Equals(PpmCouleur a, PpmCouleur b)
+{
+    return a.Rouge == b.Rouge && a.Vert == b.Vert && a.Bleu == b.Bleu;
 }
 
 void GetPPMHeaderData(PpmReader* ppm)

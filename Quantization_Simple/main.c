@@ -14,15 +14,20 @@ int main(int argc, char *argv[])
     GetPPMHeaderData(r);
     int x,y;
     PpmPalette* palette = ConsPaletteVide();
+    PpmCouleur c;
     for (y=0; y < (r->Height); y++)
     for (x=0; x < (r->Width); x++)
     {
-        PpmCouleur c = GetPixel(r, x, y);
+        c = GetPixel(r, x, y);
         //printf("R=%X G=%X B=%X \n", c.Rouge, c.Vert, c.Bleu);
+
+        if (Contains(palette,c))
+            continue;
         palette = ConsPalette(palette, c);
-        printf("%d\n", palette->Count);
     }
 
+    printf("%d\n", palette->Count);
+    printf("DONE");
 	MettrePause();
 	return EXIT_SUCCESS;
 }

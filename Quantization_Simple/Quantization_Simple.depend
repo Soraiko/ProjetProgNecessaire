@@ -1,56 +1,29 @@
 # depslib dependency file v1.0
-1543869104 source:d:\workspace\home\projetprogavancee\quantization_simple\main.c
-	<stdio.h>
-	<stdlib.h>
-	"ppm_reader.h"
-
-1543869532 d:\workspace\home\projetprogavancee\quantization_simple\ppm_reader.h
-	<stdio.h>
-	<stdlib.h>
-
-1543869098 source:d:\workspace\home\projetprogavancee\quantization_simple\ppm_reader.c
-	<stdio.h>
-	<stdlib.h>
-	"ppm_reader.h"
-
-1543881905 source:d:\workspace\home\projetprognecessaire\quantization_simple\main.c
-	<stdio.h>
-	<stdlib.h>
-	"ppm_reader.h"
-
-1543881867 d:\workspace\home\projetprognecessaire\quantization_simple\ppm_reader.h
-	<stdio.h>
-	<stdlib.h>
-
-1543881946 source:d:\workspace\home\projetprognecessaire\quantization_simple\ppm_reader.c
-	<stdio.h>
-	<stdlib.h>
-	"ppm_reader.h"
-
-1544006421 source:c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\ppm_reader.c
-	<stdio.h>
-	<stdlib.h>
-	"ppm_reader.h"
-
-1544006479 c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\ppm_reader.h
-	<stdio.h>
-	<stdlib.h>
-
-1544007478 source:c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\main.c
+1544057278 source:d:\workspace\home\projetprognecessaire\quantization_simple\main.c
 	<stdio.h>
 	<stdlib.h>
 	"ppm_reader.h"
 	"ppm_quanti.h"
 
-1544007362 source:c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\ppm_quanti.c
+1544056857 d:\workspace\home\projetprognecessaire\quantization_simple\ppm_reader.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1544029669 d:\workspace\home\projetprognecessaire\quantization_simple\ppm_quanti.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"ppm_reader.h"
+
+1544045187 source:d:\workspace\home\projetprognecessaire\quantization_simple\ppm_quanti.c
 	<stdio.h>
 	<stdlib.h>
 	"ppm_quanti.h"
 	<stdbool.h>
 
-1544007490 c:\users\brazda1u\source\repos\projetprognecessaire-master\quantization_simple\ppm_quanti.h
+1544057140 source:d:\workspace\home\projetprognecessaire\quantization_simple\ppm_reader.c
 	<stdio.h>
 	<stdlib.h>
-	<stdbool.h>
 	"ppm_reader.h"
 
