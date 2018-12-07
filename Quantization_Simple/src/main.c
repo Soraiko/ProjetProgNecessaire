@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     PpmPalette* palette = ConsPalette(r->Width * r->Height); /*PpmPaletteChainee* palette = ConsPcVide();*/
     PpmCouleur c;
 
-    printf("Recuperation de la liste des couleurs. (Version palette tableau)\n\n");
+    printf("Recuperation de la liste des couleurs... (Version palette tableau)\n\n");
     /*printf("Recuperation de la liste des couleurs. (Version palette liste chainee)\n");*/
 
     for (y=0; y < (r->Height); y++)
