@@ -65,3 +65,31 @@
 	<stdlib.h>
 	"timer.h"
 
+1544176147 source:c:\users\brazda1u\documents\projetprognecessaire-master\quantization_simple\src\ppm_quanti.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_quanti.h"
+	<stdbool.h>
+
+1544176188 c:\users\brazda1u\documents\projetprognecessaire-master\quantization_simple\src\ppm_quanti.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"ppm_reader.h"
+
+1544175305 c:\users\brazda1u\documents\projetprognecessaire-master\quantization_simple\src\ppm_reader.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1544175305 source:c:\users\brazda1u\documents\projetprognecessaire-master\quantization_simple\src\ppm_reader.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+
+1544182643 source:c:\users\brazda1u\documents\projetprognecessaire-master\quantization_simple\src\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ppm_reader.h"
+	"ppm_quanti.h"
+
