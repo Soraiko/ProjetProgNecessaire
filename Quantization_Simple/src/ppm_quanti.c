@@ -22,19 +22,19 @@ void AjouterCouleur(PpmPalette* p, PpmCouleur c)
     p->Count = p->Count + 1;
 }
 
-bool PaletteContains(PpmPalette* p, PpmCouleur c)
+int PaletteIndexOf(PpmPalette* p, PpmCouleur c)
 {
-    bool contains = false;
+    int index = -1;
     int i;
     for (i = 0; i < (p->Count); i++)
     {
         if (Equals(p->Couleur[i], c))
         {
-            contains = true;
+            index = i;
             break;
         }
     }
-    return contains;
+    return index;
 }
 
 
@@ -72,9 +72,9 @@ PpmPaletteChainee* ConsPc(PpmPaletteChainee* old_p, PpmCouleur c)
     return p;
 }
 
-bool PcContains(PpmPaletteChainee* p, PpmCouleur c)
+int PcIndexOf(PpmPaletteChainee* p, PpmCouleur c)
 {
-    bool contains = false;
+    int index = -1;
     if (!PcEstVide(p))
     {
         PpmPaletteChainee* passingPalette = p->PremierElement;
@@ -83,13 +83,13 @@ bool PcContains(PpmPaletteChainee* p, PpmCouleur c)
         {
             if (Equals(c,passingPalette->Couleur))
             {
-                contains = true;
+                index = i;
                 break;
             }
             passingPalette = passingPalette->CouleurSuivante;
         }
     }
-    return contains;
+    return index;
 }
 
 #endif

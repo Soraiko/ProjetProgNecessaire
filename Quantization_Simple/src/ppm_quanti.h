@@ -13,7 +13,7 @@ typedef struct palette {
 
 
 PpmPalette* ConsPalette(int count);
-bool PaletteContains(PpmPalette* p, PpmCouleur c);
+int PaletteIndexOf(PpmPalette* p, PpmCouleur c);
 void AjouterCouleur(PpmPalette* p, PpmCouleur c);
 
 
@@ -27,7 +27,7 @@ typedef struct palette_chainee {
 PpmPaletteChainee* ConsPcVide();
 PpmPaletteChainee* ConsPc(PpmPaletteChainee* old_p, PpmCouleur c);
 bool PcEstVide(PpmPaletteChainee* p);
-bool Contains(PpmPaletteChainee* p, PpmCouleur c);
+int PcIndexOf(PpmPaletteChainee* p, PpmCouleur c);
 
 
 
