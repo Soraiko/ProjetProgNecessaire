@@ -19,17 +19,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="main.c">
+		<Unit filename="src\main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="ppm_quanti.c">
+		<Unit filename="src\ppm_quanti.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="ppm_quanti.h" />
-		<Unit filename="ppm_reader.c">
+		<Unit filename="src\ppm_quanti.h" />
+		<Unit filename="src\ppm_reader.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="ppm_reader.h" />
+		<Unit filename="src\ppm_reader.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
